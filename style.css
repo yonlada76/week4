@@ -1,0 +1,91 @@
+body {
+    width: 750px;
+    height: 750px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer {
+    background-color: rgb(223, 226, 42);
+    border: 5px solid;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    flex: 0 0 100px;
+}
+
+footer {
+    flex: 0 0 50px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    background-color: cyan;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.left-column .item {
+    background-color: rgb(202, 140, 58);
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right-column .top-right {
+    background-color: rgb(248, 101, 16);
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid ;
+}
+
+.right-column .bottom-right {
+    display: flex;
+    flex: 2;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid;
+    background-color: rgb(196, 34, 129);
+}
+
+.bottom-left {
+    background-color: rgb(235, 6, 6);
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 3px solid ;
+}
+
+.bottom-right-inner {
+    background-color: rgb(70, 26, 231);
+    flex: 1;
+    padding: 10px;
+    border: 3px solid ;
+}
